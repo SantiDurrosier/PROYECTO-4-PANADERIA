@@ -35,6 +35,14 @@ h3 {
   letter-spacing: 2px;
 }
 
+h4 {
+  font-family: "Open Sans";
+  color: rgb(29, 29, 29);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 p {
   font-family: "Open Sans";
   color: rgb(29, 29, 29);
@@ -172,7 +180,6 @@ nav > ul a {
   font-size: clamp(0.8rem, 3vw, 1.1rem);
 }
 nav .idiomas {
-  background-color: aqua;
   position: absolute;
   top: 0.5rem;
   right: 1rem;
@@ -186,7 +193,7 @@ nav .idiomas {
 header {
   width: 100%;
   height: 100dvh;
-  background-color: rgb(122, 234, 198);
+  background-color: rgb(29, 29, 29);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,23 +208,19 @@ header > :nth-child(2) {
 @media only screen and (min-width: 800px) {
   header > :nth-child(2) {
     width: 500px;
-    border: 2px solid rgb(29, 29, 29);
   }
 }
 header > :nth-child(2):hover img {
-  transform: scale(1.2);
-  transition: 2s;
-}
-header > :nth-child(2):active img {
-  filter: sepia(1);
-  transition: 4s;
+  transform: scale(1.05);
+  transition: 1s;
 }
 header > :nth-child(2) img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: 1s;
+  filter: invert(1);
 }
 
 footer {
@@ -450,8 +453,8 @@ footer ul {
 }
 @media only screen and (min-width: 800px) {
   .art02 .imagenes > img {
-    height: initial;
     width: 32%;
+    height: 25.6dvw;
   }
 }
 
@@ -497,62 +500,70 @@ footer ul {
 
 .art04 {
   width: 100%;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  row-gap: 3rem;
+  justify-content: flex-start;
+  row-gap: 2rem;
 }
-.art04 > span {
-  width: 80px;
-  height: 5px;
+@media only screen and (min-width: 1200px) {
+  .art04 {
+    width: 80%;
+    padding: initial;
+    row-gap: 4rem;
+  }
+}
+.art04 .ralla {
+  width: 60px;
+  height: 2px;
   background-color: #d14d4d;
 }
-
-.contenedorFichas {
+.art04 .contenedor-fichas {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   row-gap: 3rem;
 }
 @media only screen and (min-width: 800px) {
-  .contenedorFichas {
-    width: 80%;
+  .art04 .contenedor-fichas {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .contenedorFichas {
-    width: 80%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.ficha {
+.art04 .contenedor-fichas .ficha {
   width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  row-gap: 1.2rem;
+  justify-content: flex-start;
+  row-gap: 1rem;
 }
-.ficha > span {
-  width: 40px;
-  height: 3px;
-  background-color: #d14d4d;
+@media only screen and (min-width: 800px) {
+  .art04 .contenedor-fichas .ficha {
+    width: 23%;
+    max-width: initial;
+  }
 }
-.ficha img {
+.art04 .contenedor-fichas .ficha h4 {
+  order: 3;
+}
+.art04 .contenedor-fichas .ficha img {
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 50%;
 }
-.ficha p {
+.art04 .contenedor-fichas .ficha p {
   text-align: center;
-  padding: 1.5rem;
+  font-weight: 100;
 }
 
 .artForm {

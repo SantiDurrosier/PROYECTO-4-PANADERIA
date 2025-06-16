@@ -1,13 +1,22 @@
 @use 'config' as c;
 @use 'global';
+
 @use 'art01';
 @use 'art02';
 @use 'art03';
-@use 'art04';
 @use 'moduloBoton02';
 
 header{
-    background-image: url();
+    background-image: url('../img/vistas/panaderia-pasteleria-aginaga-1500.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @media only screen and (min-width:c.$tablet){
+        background-image: url('../img/vistas/panaderia-pasteleria-aginaga-1800.avif');
+    }
+    @media only screen and (min-width:c.$desktop){
+        background-image: url('../img/vistas/panaderia-pasteleria-aginaga-2560.avif');
+    }
 }
 
 
