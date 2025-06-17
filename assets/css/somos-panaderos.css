@@ -531,4 +531,33 @@ footer ul {
   border-radius: 50%;
   transform: rotate(-45deg);
   transition: 0.3s;
+}
+
+header {
+  background-image: url("../img/vistas/quienes-somos-1500.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media only screen and (min-width: 800px) {
+  header {
+    background-image: url("../img/vistas/quienes-somos-1800.avif");
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    background-image: url("../img/vistas/quienes-somos-2560.avif");
+  }
+}
+
+.art03 > img {
+  height: 400px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.art01 > img {
+  -o-object-fit: center;
+     object-fit: center;
+  height: 500px;
 }/*# sourceMappingURL=somos-panaderos.css.map */

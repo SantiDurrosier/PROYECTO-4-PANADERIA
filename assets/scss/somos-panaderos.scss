@@ -4,3 +4,31 @@
 @use 'art03';
 @use 'art04';
 @use 'moduloBoton02';
+
+
+header{
+    background-image: url('../img/vistas/quienes-somos-1500.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @media only screen and (min-width:c.$tablet){
+        background-image: url('../img/vistas/quienes-somos-1800.avif');
+    }
+    @media only screen and (min-width:c.$desktop){
+        background-image: url('../img/vistas/quienes-somos-2560.avif');
+    }
+}
+
+.art03{
+    >img{
+        height: 400px;
+        object-position: center;
+    }
+}
+
+.art01{
+    >img{
+    object-fit: center;
+    height: 500px;
+    }
+}
