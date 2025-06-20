@@ -722,9 +722,6 @@ footer ul {
     width: 45%;
   }
 }
-.sect01 article > :nth-child(1) .cards .card > img {
-  border-radius: 50%;
-}
 .sect01 article > :nth-child(1) .cards .card p {
   font-size: 0.9em;
 }

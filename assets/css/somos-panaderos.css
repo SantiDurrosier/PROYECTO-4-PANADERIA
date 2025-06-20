@@ -560,4 +560,12 @@ header {
   -o-object-fit: center;
      object-fit: center;
   height: 500px;
+}
+
+.ficha > p {
+  min-height: 120px;
+}
+.ficha:hover img {
+  transform: scale(1.2);
+  transition: 1s;
 }/*# sourceMappingURL=somos-panaderos.css.map */

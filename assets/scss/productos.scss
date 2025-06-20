@@ -6,4 +6,29 @@
 @use 'moduloBoton02';
 
 
+header{
+    background-image: url('../img/vistas/productos1-1500.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media only screen and (min-width:c.$tablet){
+        background-image: url('../img/vistas/productos1-1800.avif');
+    }
+    @media only screen and (min-width:c.$desktop){
+        background-image: url('../img/vistas/productos1-2560.avif');
+    }
 
+    
+}
+
+.card{
+    >img{
+        
+        width: 40px;
+        height: 40px;
+        object-fit: cover;    
+        object-position: center;  
+
+    }
+}
