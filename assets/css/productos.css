@@ -331,6 +331,7 @@ footer > :nth-child(2) > div {
 }
 footer a, footer p {
   color: white;
+  text-align: center;
 }
 footer ul {
   list-style: none;
@@ -580,8 +581,8 @@ header {
 .card > img {
   width: 40px;
   height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }/*# sourceMappingURL=productos.css.map */
